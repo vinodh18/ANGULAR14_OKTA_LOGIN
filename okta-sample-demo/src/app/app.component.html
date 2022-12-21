@@ -1,0 +1,10 @@
+<div *ngIf="!user" id="okta-login-container"></div>
+
+<div *ngIf="user" style="margin-top: 100px;">
+  Hello {{user?.name }}
+
+  <!-- <button (click)="logout()">Logout</button> -->
+
+</div>
+<app-nav></app-nav>
+<router-outlet></router-outlet>
